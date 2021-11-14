@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #fcfff5;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.logo{
+    padding: 24px 0;
+}
+
+.logo img{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 430px;
+    margin: auto;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+.menu a:hover{
+    color: #a4281f;
+}
+
+/* END OF HEADER */
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/banner-inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.banner > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 219, 189, 0.5);
+}
+
+.llamada-accion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.llamada-accion p{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.llamada-accion h2{
+    width: 100%;
+    max-width: 475px;
+    height: 130px;
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.47);
+    padding-top: 30px;
+}
+
+.llamada-accion a{
+    width: 158px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.47);
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+/* END OF BANNER */
+
+.bienvenida{
+    width: 100%;
+    height: 240px;
+    background-color: #3e606f;
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.bienvenida h3{
+    font-size: 14px;
+    padding: 40px 0 32px 0;
+}
+
+.bienvenida p{
+    font-size: 16px;
+    max-width: 400px;
+    line-height: 1.6em; /* añadir espacio en el texto entre las líneas */
+    margin: 0 auto; 
+    /* 0 para arriba y abajo, auto para izq y der */
+}
+
+/* END OF SECTION "WELCOME" */
+
+.nosotros{
+    width: 100%;
+    padding-bottom: 80px;
+    /* height: 460px; */
+}
+
+.nosotros > .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-equipo{
+    width: 100%;
+    max-width: 570px;
+}
+
+.foto-equipo img{
+    width: 100%;
+}
+
+.conocenos{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.conocenos p:nth-child(1){
+    font-size: 14px;
+    color: #3c1c22;
+}
+
+.conocenos hr{
+    width: 100%;
+    max-width: 478px;
+    color: #a2a2a2;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.conocenos h3{
+    font-size: 18px;
+    color: #0e96dd;
+    padding-bottom: 30px;
+}
+
+.conocenos p:nth-child(4){
+    font-size: 14px;
+    color: #3c1c22;
+}
+
+.conocenos p:nth-child(5){
+    font-size: 14px;
+    color: #646464;
+    padding: 26px 0;
+}
+
+.conocenos a{
+    font-size: 15px;
+    color: #0e96dd;
+}
+
+@media all and (min-width:769px){
+    .nosotros{
+        padding-top: 80px;
+    }
+
+    .foto-equipo{
+        margin-right: 30px;
+    }
+
+    .conocenos{
+        padding-left: 30px;
+        text-align: left;
+    }
+}
+
+/* END OF ABOUT US */
+
+footer{
+    width: 100%;
+    background-color: #193441;
+    padding-top: 26px;
+    padding-bottom: 10px;
+}
+
+.color > .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.color{
+    background-color: #152d37;
+}
+
+.widget{
+    width: 100%;
+    max-width: 270px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    /* margin: 0 auto; */
+}
+
+.widget h3{
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.widget p{
+    font-size: 14px;
+}
+
+footer p:nth-child(2){
+    width: 100%;
+    color: #7a7a7a;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* END OF FOOTER */
